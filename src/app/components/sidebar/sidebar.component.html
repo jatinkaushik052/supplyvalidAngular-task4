@@ -1,0 +1,47 @@
+<div class="togglebtn" [ngStyle]="{'left':togglePosition ? '-1em': '16em'}">
+    <i id="closebtn" class='bx bx-chevron-right'
+     [ngClass]="iconOn" (click)="sidebarOn()"
+     ></i>
+    <i id="openbtn" class='bx bx-chevron-left' [ngClass]="iconOff" (click)="sidebarOff()"></i>
+</div>
+
+<div *ngIf="issidebarVisiable" class="sidebar">
+    <div class="d-flex align-items-center sHight">
+        <img src="img/dashboard.png" alt="">
+        <p>Dashboard</p>
+    </div>
+    <div class="dashboard2 dflex">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item ">
+                <h2 class="accordion-header d-flex align-items-center"
+                    style="background-color: #F29441 !important; padding-left: 4px; border-radius: 15px;">
+                    <img src="img/usermapping.png" alt="">
+                    <button class="accordion-button text-white" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne"
+                        style="background-color: #F29441 !important; border: none; border-top-right-radius: 15px; border-bottom-right-radius: 15px;">
+                        User and Mapping
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body userMap">
+                        <p>User Management</p>
+                        <p>Mapping</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex align-items-center">
+        <img src="img/doc.png" alt="">
+        <p>Document Stream</p>
+    </div>
+    <div class="d-flex align-items-center">
+        <img src="img/msg.png" alt="">
+        <p>Ticket Management</p>
+    </div>
+    <div class="d-flex align-items-center">
+        <img src="img/data.png" alt="">
+        <p>Survey Data</p>
+    </div>
+</div>

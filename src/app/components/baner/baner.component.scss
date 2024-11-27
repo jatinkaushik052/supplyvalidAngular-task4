@@ -1,0 +1,23 @@
+.banner {
+    
+    .formlabel{
+        width: 45%;
+    }
+    .fileUploadBox {
+        background-color: white;
+        width: 380px;
+        height: 220px;
+        border-radius: 10px;
+        opacity: 1;
+        text-align: center;
+    }
+
+    .fileUpload {
+        margin: 12px 12px 16px 12px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        border: 1px dashed black;
+    }
+}

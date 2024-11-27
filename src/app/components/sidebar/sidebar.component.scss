@@ -1,0 +1,35 @@
+.sidebar{
+    padding-top: 55px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 273px;
+    gap: 30px;
+    padding-bottom: 30px;
+    border-bottom-right-radius: 170px;
+    
+    img{
+        width: 28px;
+        height: 28px;
+    }
+    .accordion-item{
+        border: none;
+    }
+    
+}
+.togglebtn{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: beige;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20em;
+    left: 16em;
+    i{
+        font-size: 35px;
+    }
+   
+}
